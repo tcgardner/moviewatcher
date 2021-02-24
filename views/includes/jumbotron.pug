@@ -1,0 +1,8 @@
+section.jumbotron.text-center
+    .container
+        h1 Movie Watcher
+        p.lead.text-muted Want to know when a movie is available for download.  Just enter the title and Movie Watcher will monitor for availability.
+        form(method="POST" action="/")
+            input(type="text", name="searchTitle", placeholder="Title to watch")
+            p
+                button.btn.btn-primary.m-2(type="submit") Watch Movie
